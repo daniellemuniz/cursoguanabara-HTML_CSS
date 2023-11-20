@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos -tag A (ancora) </h1>
+    <a href="#links-internos">Vai pro final da página</a>
+    <p>Link que vai apontar para outro site - tag A (ancora), usando o parametro HREF (Referencia de hipertexto)</p>
+    <p>Para controlar onde o site de destino vai abrir use o parametro - TARGET com o recurso REL que indica qual a natureza do destino do link </p>
+
+    <p><strong>O parametro TARGET aceita alguns valores:</strong></p>
+    <p>_blank vai abrir o link em uma nova janela em branco</p>
+    <p>_self vai abrir o link na janela ou frame atual (padrão) </p>
+    <p>_top vai desfazer todos os frames e abrir o destino no navegador completo</p>
+    <p>_parent similar ao uso do _top em uma referência à janela mãe </p>
+    <p>nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir </p>
+
+    <p><strong>O recurso REL também apresenta alguns valores</strong></p>
+    <p>next indica que o link é para a próxima parte do documento atual </p>
+    <p>prev indica que o link é para a parte anterior do documento atual </p>
+    <p>author indica que é um link para o site do autor do artigo atual</p>
+    <p>external indica que é um link para outro site que não faz parte do site atual</p>
+
+
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositorio no GitHub</a></p>
+    <p>Você também pode acessar o meu <a href="http://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h2 id="links-internos">Links internos</h2>
+    <p> Chama um link que esta no mesmo servidor.</p>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next"> segunda página</a></p>
+    <p>Você também pode visitar a <a href="noticias/pag03.html" target="_self" rel="next">página 03</a></p>
+
+    <h2>Links para download</h2>
+    <ul>
+        <li><a href="livro/livro.pdf" download="livro.pdf" type="application/pdf">Baixar livro em PDF</a></li>
+        <li><a href="livro/livro.zip" download="livro.zip" type="application/zip">Baixar livro em ZIP</a></li>
+    </ul>
+
+</body>
+</html>
